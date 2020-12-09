@@ -1,25 +1,36 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-<meta charset="UTF-8">
-<title>Toni's Deli</title>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="description" content="Steakville is a free restaurant template designed by Mikhail Korolchuk.">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Average" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-<link rel="shortcut icon" href="https://jamesarc.com/work/steakville/favicon.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="https://jamesarc.com/work/steakville/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://jamesarc.com/work/steakville/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://jamesarc.com/work/steakville/favicon-16x16.png">
-<link rel="manifest" href="https://jamesarc.com/work/steakville/manifest.json">
-<link rel="mask-icon" href="https://jamesarc.com/work/steakville/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="theme-color" content="#ffffff">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="main.css">
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Northstreet Restaurant">
+    <meta name="author" content="A.K.">
+
+    <title>Restaurant Northstreet</title>
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
+
+    <link rel="stylesheet" href="main1.css" type="text/css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
+  <!-- Site Wrapper -->
 <div class="wrapper--site">
 	<!-- Header -->
 	<header class="header">
@@ -28,6 +39,7 @@
 			<div class="container-fluid wrapper">
 				<a class="top__link" href="https://www.google.com/maps/place/New+Scotland+Yard,+Broadway,+Westminster,+London+SW1H+0BG,+UK" target="_blank">
 					<div class="top__marker"></div>
+					<span class="top__address">New Scotland Yard, 8-10 Broadway, Westminster, London SW1H 0BG</span>
 				</a>
 				<div class="social__header-group">
 					<a class="social__header social__header--facebook" href="javascript:void(0);"></a>
@@ -51,14 +63,19 @@
 							<a class="nav__link" href="#home">Home</a>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link" href="#reservation">Booking's</a>
+							<a class="nav__link" href="#reservation">Reservations</a>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link" href="menu.html">Menu</a>
+							<a class="nav__link" href="#menu">Menu</a>
 						</li>
+						<li class="nav__item d-none d-md-inline-block">
+							<a class="nav__link" href="javascript:void(0);">Blog</a>
+						</li>
+						<li class="nav__item d-none d-md-inline-block">
+							<a class="nav__link" href="javascript:void(0);">Features</a>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link" href="contact.html">Contact</a>
+							<a class="nav__link" href="javascript:void(0);">Contact</a>
 						</li>
 					</ul>
 				</nav><!-- Navigation -->
@@ -73,8 +90,8 @@
 			<div class="container-fluid wrapper">
 				<div class="home__wrapper">
 					<h3>Welcome to</h3>
-					<h2>Toni's Deli</h2>
-					<span>London Gatwick, Crawley</span>
+					<h2>Steakville Restaurant</h2>
+					<span>New Scotland Yard, 8-10 Broadway, Westminster, London SW1H 0BG</span>
 					<div class="arrow arrow--home"></div>
 					<a class="button button--home button--shadow" href="#menu">Menu</a>
 				</div>
@@ -95,12 +112,14 @@
 		<!-- About Us -->
 		<section class="about" id="about">
 			<div class="container-fluid wrapper" data-scroll-reveal>
+				<img class="about__image" src="http://www.jamesarc.com/work/steakville/assets/img/about-1.jpg">
+				<img class="about__image" src="http://www.jamesarc.com/work/steakville/assets/img/about-2.jpg">
 				<div class="about__box"></div>
 				<div class="about__wrapper">
 					<h3>Discover</h3>
 					<h2>Our History</h2>
 					<p>
-					Who we are
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.I am text block. I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec.
 					</p>
 				</div>
 			</div>
@@ -109,7 +128,7 @@
 		<!-- Menu -->
 		<section class="menu parallax" id="menu">
 			<div class="container-fluid wrapper">
-				<h3 data-scroll-reveal>Toni's Deli</h3>
+				<h3 data-scroll-reveal>Steakville</h3>
 				<h2 data-scroll-reveal>Our Menu</h2>
 				<p data-scroll-reveal>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -198,14 +217,6 @@
 									<span class="menu__desc">Mozzarella cheese.</span>
 									<span class="menu__price">$14.99</span>
 								</div>
-              </div>
-              <div class="menu__item">
-								<img class="menu__image" src="http://www.jamesarc.com/work/steakville/assets/img/menu/menu-10.png">
-								<div class="menu__caption">
-									<span class="menu__name">Mozzarella Moons</span>
-									<span class="menu__desc">Mozzarella cheese.</span>
-									<span class="menu__price">$14.99</span>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -221,18 +232,15 @@
 				<div class="opening__wrapper" data-scroll-reveal>
 					<div class="opening__image" style="background-image: url('http://www.jamesarc.com/work/steakville/assets/img/opening.jpg');"></div>
 					<div class="opening__hours">
-						<span>WeekDays:</span>
+						<span>Dinner:</span>
 						<p>
-              Monday<br class="d-none d-md-block d-xl-none">10.00 am til 6.00 pm<br>
-              Tuesday<br class="d-none d-md-block d-xl-none">10.00 am til 6.00 pm<br>
-              Wednesday<br class="d-none d-md-block d-xl-none">10.00 am til 6.00 pm<br>
-              Thursday<br class="d-none d-md-block d-xl-none">10.00 am til 6.00 pm<br>
-              Friday<br class="d-none d-md-block d-xl-none">10.00 am til 6.00 pm<br>
+							Tuesday to Saturday <br class="d-none d-md-block d-xl-none">5.30 pm til 9.00 pm<br>
+							Bank Holiday Sundays <br class="d-none d-md-block d-xl-none">6pm til 9pm
 						</p>
-						<span>Weekends:</span>
+						<span>Lunch:</span>
 						<p>
-              Saturday<br class="d-none d-md-block d-xl-none">12.00 pm til 8.00 pm<br>
-							Sunday<br class="d-none d-md-block d-xl-none">12.00 pm til 8.00 pm<br>
+							Friday 12.30 til 2.30 pm<br>
+							Sunday 12.30 til 4 pm
 						</p>
 					</div>
 				</div>
@@ -298,13 +306,13 @@
 		<!-- Reservation -->
 		<section class="reservation" id="reservation">
 			<div class="container-fluid wrapper">
-				<h3 data-scroll-reveal>Booking</h3>
-				<h2 data-scroll-reveal>Book Online</h2>
+				<h3 data-scroll-reveal>Reservation</h3>
+				<h2 data-scroll-reveal>Book A Table</h2>
 				<div class="arrow arrow--reservation" data-scroll-reveal></div>
 				<p data-scroll-reveal>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 				</p>
-				<a class="button button--reservation button--shadow" href="javascript:void(0);" data-scroll-reveal>Book Online Here</a>
+				<a class="button button--reservation button--shadow" href="javascript:void(0);" data-scroll-reveal>Book A Table</a>
 			</div>
 		</section><!-- Reservation -->
 
@@ -358,21 +366,27 @@
 				</div>
 			</div>
 		</section><!-- Reservation -->
-    <footer>
-      <div class="wrapper">
-          <small><strong>This Site was made by Raheem</strong></small>
-        <small>&copy;2020 <strong>Raheem Shah</strong>, All Rights Reserved</small>
-        <small><strong>Version Number </strong>1.0</small>
-        <nav class="footer-nav">
-          <a href="#">Back to Top</a>
-          <a href="https://raheemshahdev.engineer/contactme.html" target="_blank">Contact Raheem</a>
-          <a href="https://raheemshahdev.engineer/index.html" target="_blank">Visit My Site</a>
-        </nav>
-      </div>
-    </footer>
-	
+
+		<!-- Subscribe -->
+		<section class="subscribe">
+			<div class="container-fluid wrapper">
+				<h2>Subscribe to Our Newsletter</h2>
+				<div class="arrow arrow--subscribe"></div>
+				<form class="form--subscribe" method="post">
+					<input class="input--subscribe js-clear-input" type="text" name="email" value="Email">
+					<input class="submit--subscribe button js-validate-email" type="submit" value="Subscribe">
+				</form> 
+			</div>
+		</section><!-- Subscribe -->
 	</main><!-- Main Content -->
-</div>
-<script src="main.js" type="text/javascript"></script>
+</div><!-- Site Wrapper -->
+
+
+
+
+    <script src="main.js"></script>
+
+    
 </body>
+
 </html>
