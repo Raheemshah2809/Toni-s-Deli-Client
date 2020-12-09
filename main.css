@@ -349,17 +349,15 @@ body .parallax {
 }
 
 .logo {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 44px;
-  height: 39px;
-}
+  
+
 
 .logo img {
   width: 100%;
+  width: 400%;
+  top: -23px;
+  left: -2px;
+}
 }
 
 .nav {
