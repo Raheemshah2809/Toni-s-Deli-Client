@@ -1,47 +1,4 @@
-/**
- * CONTENTS
- *
- * GENERAL
- * Variables............Sass variables.
- * Mixins...............Useful mixins.
- * Global...............Globally-available variables and config.
- * Wrappers.............Wrapping and constraining elements.
- *
- * MISC
- * Arrow................Arrow styles.
- * Button...............Button styles.
- * Parallax.............Parallax styles.
- *
- * HEADER...............Header styles.
- * Top..................Top styles.
- * Menu.................Menu styles.
- * Logo.................Logo styles.
- * Navigation...........Navigation styles.
- *
- * HOME.................Home section styles.
- *
- * ABOUT US.............About Us section styles.
- *
- * MENU.................Menu section styles.
- *
- * OPENING HOURS........Opening Hours section styles.
- *
- * STAFF................Staff section styles.
- *
- * RESERVATION..........Reservation section styles.
- *
- * REVIEWS..............Reviews section styles.
- *
- * SUBSCRIBE............Subscribe section styles.
- *
- * MEDIA QUERIES........Media query styles.
- */
-/*----------------------------------------*\
-	CSS RESET
-	http://meyerweb.com/eric/tools/css/reset/ 
-	v2.0 | 20110126
-	License: none (public domain)
-\*-----------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 html,
 body,
 div,
@@ -180,13 +137,15 @@ table {
   font-family: wildYouth;
   src: url("http://www.jamesarc.com/work/steakville/assets/font/WildYouth-Regular.otf");
 }
+
+
 html,
 body {
   height: 100%;
 }
 
 body {
-  font-family: Average, "Times New Roman", Times, serif;
+  font-family: Roboto, "Times New Roman", Times, serif;
   font-size: 20px;
   font-weight: 400;
   color: #fff;
@@ -259,6 +218,26 @@ input {
   font-size: 15px;
   text-transform: uppercase;
   background-color: red;
+}
+.button1 {
+  position: relative;
+  display: inline-block;
+  width: 172px;
+  height: 50px;
+  line-height: 50px;
+  white-space: nowrap;
+  text-align: center;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  background-color: red;
+}
+
+.button1,
+.button:link,
+.button:hover,
+.button:visited {
+  color: #000;
 }
 
 .button,
@@ -427,7 +406,7 @@ body .parallax {
   width: 100%;
   height: calc(100vh - 29px);
   min-height: 480px;
-  background: url("http://www.jamesarc.com/work/steakville/assets/img/home-bg.jpg") no-repeat center;
+  background: url("images/wallpapertd1.jpg") no-repeat center;
   background-size: cover;
   background-color: #000;
   z-index: 1000;
