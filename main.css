@@ -1495,7 +1495,7 @@ footer {
 font-family: 'Arial', sans-serif;
 font-size: .875rem;
 height: 8rem;
-width: 100vw;
+width: 100%;
 text-align: center;
 display: table;
 }
