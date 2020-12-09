@@ -1371,6 +1371,9 @@ body .parallax {
 }
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) {
+
+ @font-family: Montserrat, Arial, Helvetica, sans-serif;
+  
   body {
     font-size: 12px;
   }
