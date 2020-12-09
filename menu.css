@@ -86,11 +86,10 @@ body{
   }
   
   #dish .box-container .box .info h3 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   
   #dish .box-container .box .info p {
-    font-size: 1.3rem;
     border-bottom: 0.2rem solid red;
     border-top: 0.2rem solid red;
     margin: 1rem 2rem;
