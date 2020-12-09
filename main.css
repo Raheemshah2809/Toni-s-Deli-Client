@@ -406,10 +406,12 @@ body .parallax {
   width: 100%;
   height: calc(100vh - 29px);
   min-height: 480px;
-  background: url("images/wallpapertd1.jpg") no-repeat center;
+  background: url("images/bg2.jpg") no-repeat center;
   background-size: cover;
   background-color: #000;
   z-index: 1000;
+  background-color: rgba(31, 32, 27, 0.65);
+  background-blend-mode: multiply
 }
 
 .home .wrapper {
@@ -1330,7 +1332,6 @@ body .parallax {
 
   .opening__image {
     height: 0;
-    padding-top: 45.71%;
   }
 
   .staff__image {
