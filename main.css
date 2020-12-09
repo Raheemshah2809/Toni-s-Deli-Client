@@ -279,7 +279,7 @@ body .parallax {
   height: 29px;
   padding-top: 7px;
   font-size: 13px;
-  background-color: red;
+  background-color: rgb(228,9,29);
 }
 
 .top__link {
@@ -515,7 +515,7 @@ body .parallax {
   background: url("http://www.jamesarc.com/work/steakville/assets/img/about-bg.jpg") no-repeat center;
   background-size: cover;
   background-position: center top;
-  background-color: #fff;
+  background-color: rgba(248, 259, 253,);
   z-index: 1000;
 }
 
@@ -587,7 +587,7 @@ body .parallax {
   background: url("http://www.jamesarc.com/work/steakville/assets/img/menu-bg.jpg") no-repeat center;
   background-size: cover;
   background-position: center top;
-  background-color: #000;
+  background-color: rgb(38,28,19);
 }
 
 .menu h2 {
@@ -745,7 +745,7 @@ body .parallax {
   background: url("http://www.jamesarc.com/work/steakville/assets/img/staff-bg.jpg") no-repeat center;
   background-size: cover;
   background-position: center bottom;
-  background-color: #000;
+  background-color:rgb(38,28,19);
 }
 
 .staff h2 {
@@ -868,7 +868,7 @@ body .parallax {
   text-align: center;
   background: url("http://www.jamesarc.com/work/steakville/assets/img/reviews-bg.jpg") no-repeat center;
   background-size: cover;
-  background-color: #000;
+  background-color: rgb(38,28,19);
 }
 
 .reviews__quote {
