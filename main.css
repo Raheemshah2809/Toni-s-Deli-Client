@@ -159,7 +159,7 @@ h2 {
 }
 
 h3 {
-  font-family: Futura, "Brush Script MT", cursive;
+  font-family: Roboto, "Brush Script MT", cursive;
   font-size: 45px;
   font-weight: 400;
   color: red;
@@ -431,7 +431,6 @@ body .parallax {
 }
 
 .home h2 {
-  /*font-family: Gotham, "Times New Roman", Times, serif;*/
   font-size: 3.8em;
   font-weight: 400;
   letter-spacing: normal;
@@ -1372,10 +1371,9 @@ body .parallax {
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) {
 
- @font-family: Montserrat, Arial, Helvetica, sans-serif;
-  
+
   body {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .home span,
