@@ -1,0 +1,23 @@
+.testimonial-slider {
+    list-style:none;
+    position:relative;
+  }
+  
+  .testimonial-slider li {
+    background-color:#222;
+    margin-bottom:10px;
+    color:#fff;
+    width:100%;
+  }
+  
+  .testimonial-slider li .selected {
+    display:auto;
+  }
+  
+  .testimonial-slider li:not(.selected) {
+    display:none;
+  }
+  
+  .testimonial-slider li .source::before {
+    content: '- ';
+  }

@@ -867,7 +867,7 @@ body .parallax {
 .testimonial-slider li {
   background-color:#222;
   margin-bottom:10px;
-  color:red;;
+  color:#fff;;
   width:100%;
 }
 
@@ -881,10 +881,6 @@ body .parallax {
 
 .testimonial-slider li .source::before {
   content: '- ';
-}
-.source{
-  color:red;
-
 }
 
 /*------------------------------------*\
