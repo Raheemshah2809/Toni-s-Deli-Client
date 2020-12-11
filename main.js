@@ -64,22 +64,22 @@ HTMLElement.prototype.forEachElement = function(elementType, callback) {
 	}
   }
   
-  let TestimonalSlider = (function(){
-	class TestimonalSlider {
+  let TestimonialSlider = (function(){
+	class TestimonialSlider {
 	  constructor(slider) {
 		let _this = this;
 		this.maxSlides = 0;
 		this.currentSlideNumber = 0;
 		this.slides = [];
 		this.displayTime = 2000;       
-		const errorMessage = 'please provide a valid testimonalSlider';
+		const errorMessage = 'please provide a valid testimonialSlider';
 		
 		/** checking that a valid testimoanl-slider was provided. */
 		if(!slider) {
 		  throw TypeError(errorMessage);
 		} else {
 		  /** testimonal slider must contain the class testimonal-slider */
-		  if(!slider.containsClass('testimonal-slider')) {
+		  if(!slider.containsClass('testimonial-slider')) {
 			throw TypeError(errorMessage);
 		  }
 		}
@@ -132,15 +132,15 @@ HTMLElement.prototype.forEachElement = function(elementType, callback) {
 		this.maxSlides++;
 	  }
 	}
-	return TestimonalSlider;
+	return TestimonialSlider;
   })();
   
   
-  let testimonals = [];
+  let testimonials = [];
   /** getting all the testimonal-sliders */
-  const testimonalSlider = Array.from(document.querySelectorAll('.testimonal-slider'));
+  const testimonialSlider = Array.from(document.querySelectorAll('.testimonial-slider'));
   
-  testimonalSlider.forEach(slider => {
-	testimonals.push(new TestimonalSlider(slider));
+  testimonialSlider.forEach(slider => {
+	testimonials.push(new TestimonialSlider(slider));
   });
 
