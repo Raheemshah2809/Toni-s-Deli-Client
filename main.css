@@ -859,106 +859,7 @@ body .parallax {
 /*------------------------------------*\
 	REVIEWS
 \*------------------------------------*/
-.reviews {
-  width: 100%;
-  padding-top: 100px;
-  padding-bottom: 83px;
-  text-align: center;
-  background: url("http://www.jamesarc.com/work/steakville/assets/img/reviews-bg.jpg") no-repeat center;
-  background-size: cover;
-  background-color: rgb(38,28,19);
-}
 
-.reviews__quote {
-  display: block;
-  width: 18px;
-  height: 16px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.carousel-control-next,
-.carousel-control-prev {
-  width: 17.5%;
-  opacity: 1;
-}
-
-.carousel-control-next:focus,
-.carousel-control-prev:focus {
-  opacity: 1;
-}
-
-.carousel-control-next:hover,
-.carousel-control-prev:hover {
-  opacity: 0.7;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  position: absolute;
-  top: 5%;
-  width: 7px;
-  height: 11px;
-}
-
-.carousel-control-prev-icon {
-  background: url("http://www.jamesarc.com/work/steakville/assets/img/sprites-reviews.png") 0 0;
-}
-
-.carousel-control-next-icon {
-  background: url("http://www.jamesarc.com/work/steakville/assets/img/sprites-reviews.png") -7px 0;
-}
-
-.carousel-indicators li {
-  width: 5px;
-  max-width: 5px;
-  height: 5px;
-  border: 1px solid red;
-  margin-right: 13px;
-  margin-right: 13px;
-  background-color: transparent;
-}
-
-.carousel-indicators .active {
-  background-color: red;
-}
-
-.carousel--reviews {
-  padding-bottom: 65px;
-  margin-top: 50px;
-}
-
-.review__item {
-  margin-right: 17.5%;
-  margin-left: 17.5%;
-}
-
-.review__desc {
-  line-height: 1.5625;
-}
-
-.review__desc,
-.review__position {
-  font-size: 0.75em;
-}
-
-.review__name,
-.review__position {
-  display: block;
-}
-
-.review__name {
-  margin-top: 45px;
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
-  font-size: 0.8em;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.review__position {
-  margin-top: 15px;
-  color: red;
 }
 
 /*------------------------------------*\
@@ -1548,4 +1449,8 @@ font-weight: 700;
 
 .testimonial-slider li .source::before {
   content: '- ';
+}
+.source{
+  color:red;
+
 }
