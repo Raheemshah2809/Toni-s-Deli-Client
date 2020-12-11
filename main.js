@@ -1,69 +1,4 @@
-/*---------------------------------------*\
-	ScrollMagic scroll interactions library
-\*---------------------------------------*/
 
-var controller = new ScrollMagic.Controller();
-
-// anchor link scrolling
-controller.scrollTo(function (pos) {
-	TweenMax.to(window, 1, {scrollTo: { y: pos }, ease: Power2.easeOut});
-});
-
-$(document).on("click", "a[href^='#']", function (e) {
-	var id = $(this).attr("href");
-
-	if ($(id).length > 0) {
-		e.preventDefault();
-		controller.scrollTo(id);
-	}
-});
-
-
-
-/*-------------------------------------*\
-	ScrollReveal scroll animations plugin
-\*-------------------------------------*/
-
-window.sr = ScrollReveal();
-sr.reveal("[data-scroll-reveal]", {
-	distance: "20vh",
-	opacity: 1,
-	scale: 1,
-	easing: "ease-out",
-	reset: true,
-	viewOffset: { top: -1000, right: 0, bottom: 0, left: 0 },
-});
-
-HTMLElement.prototype.forEachElement = function(elementType, callback) {
-	if(elementType && callback) {
-	  let elements = this.querySelectorAll(elementType);
-	  Array.from(elements).forEach((element, index) => {
-		callback(element, index);
-	  }); 
-	}
-  }
-  
-  HTMLElement.prototype.addClass = function(className) {
-	if(className) {
-	  this.classList.add(className);
-	}
-  }
-  
-  HTMLElement.prototype.containsClass = function(className) {
-	if(className) {
-	  return this.classList.contains(className);
-	}
-	return false;
-  }
-  
-  HTMLElement.prototype.removeClass = function(className) {
-	if(className) {
-	  if(this.containsClass(className)) {
-		this.classList.remove(className);
-	  }
-	}
-  }
-  
   let TestimonialSlider = (function(){
 	class TestimonialSlider {
 	  constructor(slider) {
@@ -78,7 +13,7 @@ HTMLElement.prototype.forEachElement = function(elementType, callback) {
 		if(!slider) {
 		  throw TypeError(errorMessage);
 		} else {
-		  /** testimonal slider must contain the class testimonal-slider */
+		  /** testimonial slider must contain the class testimonial-slider */
 		  if(!slider.containsClass('testimonial-slider')) {
 			throw TypeError(errorMessage);
 		  }
