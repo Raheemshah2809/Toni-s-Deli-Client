@@ -636,6 +636,7 @@ body .parallax {
 .menu__name,
 .menu__desc {
   display: block;
+  font-family: Roboto, Arial,sans-serif;
 }
 
 .menu__name,
@@ -800,6 +801,7 @@ body .parallax {
 .staff__name,
 .staff_desc {
   display: block;
+  font-family: Roboto, Arial,sans-serif;
 }
 
 .staff__name {
@@ -822,6 +824,7 @@ body .parallax {
 .staff__desc {
   font-size: 0.8em;
   line-height: 1.5625;
+  font-family: Roboto, Arial,sans-serif;
 }
 
 /*------------------------------------*\
@@ -1032,6 +1035,7 @@ body .parallax {
   .menu p,
   .staff__name {
     margin-top: 40px;
+    font-family: Roboto;
   }
 
   .menu__item-group,
@@ -1475,4 +1479,8 @@ font-weight: 700;
   font-size: 50px;
   font-family: Roboto;
 
+}
+
+.pclass{
+  font-family: Roboto, Arial, sans-serif;
 }
