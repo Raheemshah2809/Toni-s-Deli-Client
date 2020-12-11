@@ -35,7 +35,7 @@ HTMLElement.prototype.removeClass = function(className) {
                 this.maxSlides = 0;
                 this.currentSlideNumber = 0;
                 this.slides = [];
-                this.displayTime = 2000;
+                this.displayTime = 4000;
                 const errorMessage = 'please provide a valid testimonialSlider';
 
                 /** checking that a valid testimoanl-slider was provided. */

@@ -163,6 +163,7 @@ h3 {
   font-size: 45px;
   font-weight: 400;
   color: red;
+  text-align: center;
 }
 
 a:link,
@@ -263,6 +264,7 @@ input {
 
 body .parallax {
   background-attachment: fixed;
+   background-color:rgb(38,28,19);
 }
 
 /*------------------------------------*\
@@ -865,12 +867,21 @@ body .parallax {
 }
 
 .testimonial-slider li {
-  background-color:#222;
+  background-color;
   margin-bottom:10px;
   color:#fff;;
   width:100%;
+  -webkit-animation: fadeinout 4s linear forwards;
+  animation: fadeinout 4s linear forwards;
+  opacity: 0;
+}
+@-webkit-keyframes fadeinout {
+  50% { opacity: 1; }
 }
 
+@keyframes fadeinout {
+  50% { opacity: 1; }
+}
 .testimonial-slider li .selected {
   display:auto;
 }
@@ -882,7 +893,6 @@ body .parallax {
 .testimonial-slider li .source::before {
   content: '- ';
 }
-
 /*------------------------------------*\
 	SUBSCRIBE
 \*------------------------------------*/
@@ -1448,3 +1458,21 @@ strong {
 font-weight: 700;
 }
 
+.reviewt1{
+  color:white;
+  text-align: center;
+}
+
+.source{
+  color:red;
+  text-align: center;
+  font-size: 20px;
+  font-family: Roboto;
+}
+.a1b1{
+  color:white;;
+  text-align: center;
+  font-size: 50px;
+  font-family: Roboto;
+
+}
