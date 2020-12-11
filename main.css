@@ -859,6 +859,31 @@ body .parallax {
 /*------------------------------------*\
 	REVIEWS
 \*------------------------------------*/
+.testimonial-slider {
+  list-style:none;
+  position:relative;
+}
+
+.testimonial-slider li {
+  background-color:#222;
+  margin-bottom:10px;
+  color:red;;
+  width:100%;
+}
+
+.testimonial-slider li .selected {
+  display:auto;
+}
+
+.testimonial-slider li:not(.selected) {
+  display:none;
+}
+
+.testimonial-slider li .source::before {
+  content: '- ';
+}
+.source{
+  color:red;
 
 }
 
@@ -1427,30 +1452,3 @@ strong {
 font-weight: 700;
 }
 
-.testimonial-slider {
-  list-style:none;
-  position:relative;
-}
-
-.testimonial-slider li {
-  background-color:#222;
-  margin-bottom:10px;
-  color:red;;
-  width:100%;
-}
-
-.testimonial-slider li .selected {
-  display:auto;
-}
-
-.testimonial-slider li:not(.selected) {
-  display:none;
-}
-
-.testimonial-slider li .source::before {
-  content: '- ';
-}
-.source{
-  color:red;
-
-}

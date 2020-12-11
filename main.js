@@ -1,4 +1,33 @@
 
+  HTMLElement.prototype.forEachElement = function(elementType, callback) {
+	if(elementType && callback) {
+	  let elements = this.querySelectorAll(elementType);
+	  Array.from(elements).forEach((element, index) => {
+		callback(element, index);
+	  }); 
+	}
+  }
+  
+  HTMLElement.prototype.addClass = function(className) {
+	if(className) {
+	  this.classList.add(className);
+	}
+  }
+  
+  HTMLElement.prototype.containsClass = function(className) {
+	if(className) {
+	  return this.classList.contains(className);
+	}
+	return false;
+  }
+  
+  HTMLElement.prototype.removeClass = function(className) {
+	if(className) {
+	  if(this.containsClass(className)) {
+		this.classList.remove(className);
+	  }
+	}
+  
   let TestimonialSlider = (function(){
 	class TestimonialSlider {
 	  constructor(slider) {
@@ -79,3 +108,4 @@
 	testimonials.push(new TestimonialSlider(slider));
   });
 
+  }
