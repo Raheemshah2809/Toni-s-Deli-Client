@@ -97,7 +97,7 @@ figure,
 footer,
 header,
 hgroup,
-menu,
+menu{}
 nav,
 section {
   display: block;
@@ -105,6 +105,13 @@ section {
 
 body {
   line-height: 1;
+  border-style: solid;
+    border-width: 3px;
+    border-left-width: 13px;
+    border-right-width: 13px;
+    border-color: red;
+    border-top-width: 0px;
+  
 }
 
 ol,
@@ -369,9 +376,10 @@ body .parallax {
   transform: translateY(-50%);
   float: right;
   font-family: Montserrat, Arial, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 50px;
   font-weight: 400;
   text-transform: uppercase;
+  right: 19px;
 }
 
 .nav__item {
@@ -391,6 +399,7 @@ body .parallax {
 .nav__link:link,
 .nav__link:visited {
   color: #fff;
+  font-size:19px;
 }
 
 .nav__link:hover {
@@ -943,6 +952,51 @@ body .parallax {
 	MEDIA QUERIES
 \*------------------------------------*/
 /* Extra large devices (large desktops) */
+@media
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 2dppx) {
+  body {
+    font-size: 18px;
+  }
+
+  .container-fluid {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+
+  .about__box {
+    right: 21%;
+    width: 33%;
+  }
+
+  .about__wrapper {
+    right: 10%;
+    width: 44%;
+    padding: 20px 40px 20px;
+  }
+
+  .about p {
+    margin-top: 20px;
+  }
+
+  .nav{
+    right: 409px;
+  }
+  .logo{
+    width: 250%;
+    left: -127px;
+      position: absolute;
+      bottom: 31px;
+  }
+
+
+
+
+}
+
 @media (max-width: 1599px) {
   body {
     font-size: 18px;
@@ -967,9 +1021,19 @@ body .parallax {
   .about p {
     margin-top: 20px;
   }
+
+  .nav{
+    right: 176px;
+  }
+  .logo{
+    width: 250%;
+    left: -127px;
+      position: absolute;
+      bottom: 50px;
+  }
 }
 /* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
   body {
     font-size: 16px;
   }
@@ -982,7 +1046,6 @@ body .parallax {
     font-size: 2.25em;
   }
 
-  .nav,
   .button,
   .about p,
   .menu p,
@@ -1004,7 +1067,18 @@ body .parallax {
     top: -70px;
     text-align: center;
 }
-  }
+.nav{
+  right: 176px;
+}
+.logo{
+  width: 250%;
+  left: -127px;
+    position: absolute;
+    bottom: 50px;
+}
+}
+
+  
 
   .home h2 {
     font-size: 4em;
@@ -1051,8 +1125,11 @@ body .parallax {
   .opening .container-fluid {
     padding-right: 10%;
     padding-left: 10%;
+
+  
   }
-}
+  
+
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991px) {
   body {
@@ -1061,7 +1138,7 @@ body .parallax {
 
   .nav__item:nth-child(n + 2) {
     margin-left: calc(30px - 4px);
-  }
+  } 
 
   .about,
   .reservation {
@@ -1197,8 +1274,19 @@ body .parallax {
   }
 
   .logo {
-    width: 35px;
-    height: 31px;
+    width: 165%;
+    left: -45px;
+    position: absolute;
+    bottom: 50px;
+}
+
+.nav {
+  left: -4px;
+  font-size: 26px;
+  white-space: nowrap;
+}
+}
+
   }
 
   .home {
@@ -1410,6 +1498,9 @@ body .parallax {
   .submit--subscribe {
     margin-top: 20px;
   }
+  .nav{
+    right: 14px;
+}
 }
 @media (min-width: 1920px) {
   .container-fluid {
@@ -1483,4 +1574,11 @@ font-weight: 700;
 
 .pclass{
   font-family: Roboto, Arial, sans-serif;
+}
+
+
+.logo1 {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }
