@@ -1,139 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
-
-*{
-  font-family: 'Roboto', sans-serif;
-}
 body{
-    background-color: black;
+  background-color:rgba(38,28,19);
+  border-style: solid;
+  border-width: 3px;
+  border-left-width: 13px;
+  border-right-width: 13px;
+  border-color: red;
+  border-top-width: 0px;
 }
 
 
-#dish {
-    min-height: 100vh;
-    width: 100vw;
-  }
-  
-  #dish .heading h1 {
-    font-size: 4rem;
-    color:white;
-    padding-top: 4rem;
-    margin-bottom: 2rem;
-  }
-  
-  #dish .heading h1 span {
-    color: red;
-  }
-  
-  #dish .box-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin: 1rem auto;
-    width: 90%;
-  }
-  
-  #dish .box-container .box {
-    height: 20rem;
-    width: 25rem;
-    border-radius: .5rem;
-    margin: 2rem;
-    cursor: pointer;
-    overflow: hidden;
-    position: relative;
-    -webkit-box-shadow: 0 0 .5rem #333;
-            box-shadow: 0 0 .5rem #333;
-  }
-  
-  #dish .box-container .box img {
-    height: 100%;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  
-  #dish .box-container .box .info {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: rgba(51, 51, 51, 0.6);
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-    color: #fff;
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  
-  #dish .box-container .box .info h3 {
-    font-size: 2rem;
-  }
-  
-  #dish .box-container .box .info p {
-    border-bottom: 0.2rem solid red;
-    border-top: 0.2rem solid red;
-    margin: 1rem 2rem;
-  }
-  
-  #dish .box-container .box .info button {
-    outline: none;
-    border: none;
-    border-radius: 5rem;
-    color: #333;
-    font-size: 1.6rem;
-    font-weight: bold;
-    text-transform: capitalize;
-    letter-spacing: .2rem;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    height: 4rem;
-    width: 14rem;
-  }
-  
-  #dish .box-container .box .info button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: red;
-    height: 100%;
-    width: 0%;
-    -webkit-transition: .2s;
-    transition: .2s;
-    z-index: -1;
-  }
-  
-  #dish .box-container .box .info button:hover::before {
-    width: 100%;
-  }
-  
-  #dish .box-container .box:hover .info {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  
+
+footer {
+  background-color:black;
+font-family: 'Arial', sans-serif;
+font-size: .875rem;
+height: 8rem;
+width: 100%;
+text-align: center;
+display: table;
+}
+footer small {
+color: #ccc;
+letter-spacing: .025rem;
+margin-bottom: 1.5rem;
+display: block;
+}
+
+footer nav a {
+text-decoration: none;
+color: #c74f78;
+margin: 0 .5rem;
+display: inline-block;
+}
+
+footer nav a:hover {
+color: #f26896;
+transition: color .15s ease-in-out;
+}
+
+strong {
+font-weight: 700;
+}
 
 #menuToggle
 {
@@ -170,7 +78,7 @@ body{
   position: absolute;
   top: -7px;
   left: -5px;
-  color: #fff
+  
   cursor: pointer;
   
   opacity: 0; /* hide this */
@@ -235,7 +143,7 @@ body{
   padding: 50px;
   padding-top: 125px;
   
-  background: black;
+  background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
 
@@ -250,47 +158,64 @@ body{
 {
   padding: 10px 0;
   font-size: 22px;
-  color: #fff;
 }
 
 #menuToggle input:checked ~ ul
 {
   transform: none;
 }
-footer {
-    background-color:black;
-  font-family: 'Arial', sans-serif;
-  font-size: .875rem;
-  height: 8rem;
-  width: 100vw;
-  text-align: center;
-  display: table;
+#restaurant-menu {
+	padding: 100px 0 60px 0;
+}
+#restaurant-menu img {
+	width: 300px;
+	box-shadow: 15px 0 #a7c44c;
+}
+#restaurant-menu h3 {
+	padding: 10px 0;
+	text-transform: uppercase;
+}
+#restaurant-menu .menu-section hr {
+	margin: 0 auto;
+}
+#restaurant-menu .menu-section {
+	margin: 0 20px 80px;
+}
+#restaurant-menu .menu-section-title {
+	font-size: 32px;
+	display: block;
+	font-weight: 400;
+	color:rgb(248,259,253) ;
+	margin: 20px 0;
+	text-align: center;
+}
+#restaurant-menu .menu-item {
+	margin: 45px 0;
+	font-size: 18px;
+}
+#restaurant-menu .menu-item-name {
+	font-weight: 400;
+	font-size: 20px;
+  color:rgb(248,259,253) ;
+	margin-bottom: 10px;
+}
+#restaurant-menu .menu-item-description {
+	font-size: 15px;
+  width: 85%;
+  color:rgb(248,259,253) ;
+}
+#restaurant-menu .menu-item-price {
+	float: right;
+	font-weight: 400;
+	color: rgb(228, 9, 29);
+	margin-top: -36px;
 }
 
-.wrapper {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-footer small {
-  color: #ccc;
-  letter-spacing: .025rem;
-  margin-bottom: 1.5rem;
-  display: block;
-}
-
-footer nav a {
-  text-decoration: none;
-  color: #c74f78;
-  margin: 0 .5rem;
-  display: inline-block;
-}
-
-footer nav a:hover {
-  color: #f26896;
-  transition: color .15s ease-in-out;
-}
-
-strong {
-  font-weight: 700;
+#restaurant-menu .menu-section-title1 {
+	font-size: 32px;
+	display: block;
+	font-weight: 400;
+	color:rgb(248,259,253) ;
+	margin: 25px 0;
+	text-align: center;
 }

@@ -1,56 +1,98 @@
+
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500);
+
+:root {
+	/* Base font size */
+	font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 body {
-    font-family: 'montserrat', sans-serif;
-    background-color: black;
-    
-  }
-  
-  .container {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    text-align: center;
-  }
-  
-  .contact-method {
-    width: 220px;
-    height: 140px;
-    display: inline-block;
-    background-color :black;
-    margin: 20px;
-    color: #fff;
-    position: relative;
-    cursor: pointer;
-  }
-  .contact-method i {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    font-size: 30px;
-    line-height: 140px;
-    background-color: darkred;
-    z-index: 1;
-    -webkit-transition: -webkit-transform .6s;
-    transition: -webkit-transform .6s;
-    transition: transform .6s;
-    transition: transform .6s, -webkit-transform .6s;
-  }
-  .contact-method:hover i {
-    -webkit-transform: translatey(-40px);
-            transform: translatey(-40px);
-  }
-  .contact-method span {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-    padding: 10px 0;
-  }
-  
-  #menuToggle
+	min-height: 100vh;
+    background-color: rgba(38,28,19);
+    border-style: solid;
+    border-width: 3px;
+    border-left-width: 13px;
+    border-right-width: 13px;
+    border-color: red;
+    border-top-width: 0px;
+}
+
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	padding: 0 2rem 2rem;
+}
+
+.heading {
+	font-family: "Montserrat", Arial, sans-serif;
+	font-size: 4rem;
+	font-weight: 500;
+	line-height: 1.5;
+	text-align: center;
+	padding: 3.5rem 0;
+	color: whitesmoke;
+}
+
+.heading span {
+	display: block;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;
+}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;
+}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;
+}
+
+.gallery-image:hover {
+	transform: scale(1.15);
+}
+
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;
+	}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;
+	}
+}
+#menuToggle
 {
   display: block;
   position: relative;
@@ -102,7 +144,7 @@ body {
   margin-bottom: 5px;
   position: relative;
   
-  background:white;
+  background: #cdcdcd;
   border-radius: 3px;
   
   z-index: 1;
@@ -127,7 +169,7 @@ body {
 {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: white;
+  background: #232323;
 }
 
 #menuToggle input:checked ~ span:nth-last-child(3)
@@ -150,7 +192,7 @@ body {
   padding: 50px;
   padding-top: 125px;
   
-  background: black;
+  background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
 
@@ -165,21 +207,9 @@ body {
 {
   padding: 10px 0;
   font-size: 22px;
-  color: white;
 }
 
 #menuToggle input:checked ~ ul
 {
   transform: none;
 }
-
-
-h3{
-    text-align: center;
-    color: white;
-}
-
-a:link {
-    color: white;
-  }
-  

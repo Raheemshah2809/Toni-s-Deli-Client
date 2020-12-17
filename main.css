@@ -89,16 +89,7 @@ video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu{}
-nav,
+
 section {
   display: block;
 }
@@ -140,9 +131,6 @@ table {
 /*------------------------------------*\
 	GENERAL
 \*------------------------------------*/
-@font-face {
-  font-family: Gotham,Futura;
-}
 
 
 html,
@@ -359,6 +347,7 @@ body .parallax {
 .logo {
   
 
+}
 
 .logo img {
   width: 100%;
@@ -366,7 +355,7 @@ body .parallax {
   top: -23px;
   left: -2px;
 }
-}
+
 
 .nav {
   position: relative;
@@ -1287,8 +1276,6 @@ only screen and (min-resolution: 2dppx) {
 }
 }
 
-  }
-
   .home {
     height: 100vh;
   }
@@ -1391,7 +1378,7 @@ only screen and (min-resolution: 2dppx) {
   .submit--subscribe {
     margin-left: calc(20px - 4px);
   }
-}
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) {
 
